@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking page</title>
+    <link rel="stylesheet" href="./styles/booking.css">
+    <link rel="stylesheet" href="../headerfooter.css">
+</head>
+<body>
+   <!-- Header  -->
+  <div class="header">
+    <header>
+      <h1 class="h1"><img src="../headerfooterimages/leaf-solid.png" alt="leaf" width="100%" height="auto">Eco Resort</h1>
+      
+      <!-- nav section-->
+      <nav>
+        <a href="../home/index.html"><img src="../headerfooterimages/house-solid.png" alt="house" width="100%" height="auto">Home</a>
+        <a href="../stay/stay.html"><img src="../headerfooterimages/bed-solid.png" alt="bed"  width="100%" height="auto">Stay</a>
+        <a href="../spa/spa.html"><img src="../headerfooterimages/spa-solid.png" alt="spa"  width="100%" height="auto">Spa&Pool</a>
+        <a href="../outing/outing.html"><img src="../headerfooterimages/car-side-solid.png" alt="car"  width="100%" height="auto"> Outing</a>
+        <a href="../booking/booking.html" class="active"><button class="button"> book here</button></a>
+      </nav>
+    </header>
+  </div>
+  <!-- Main Section -->
+  <main>
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="about-content">
+        <h1>Welcome to the Eco Resort</h1>
+        <p>Immerse yourself in nature while enjoying the finest eco-friendly accommodations.</p>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+      <h2>Book Your Stay</h2>
+      <form action="mailto: kavitha0691@gmail.com" method="post" enctype="text/plain" class="booking-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="Adults">Number of Adults</label>
+        <input type="number" id="Adults" name="Adults">
+
+        <label for="kids">Number of kids</label>
+        <input type="number" id="kids" name="kids">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="room">Room Type:</label>
+        <select id="room" name="room" required>
+          <option value="treehouse">Treehouse stay</option>
+          <option value="lodge">Caravan stay</option>
+          <option value="bungalow">Tent stay</option>
+          <option value="bungalow">Cave stay</option>
+          <option value="bungalow">boathouse stay</option>
+        </select>
+
+        <label for="checkin">Check-in Date:</label>
+        <input type="date" id="checkin" name="checkin" required>
+
+        <label for="checkout">Check-out Date:</label>
+        <input type="date" id="checkout" name="checkout" required>
+
+        <button type="submit">Book Now</button>
+      </form>
+    </section>
+  </main>
+
+
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-address">
+        <h3><img src="../headerfooterimages/leaf-solid.png" alt="leaf">Eco Resort</h3>
+        <p>Eco Resort is a sustainable retreat committed to preserving nature. We offer eco-friendly accommodations, nature tours, and wellness activities designed to immerse you in a serene natural environment.</p>
+      </div>
+      <!-- Footer Contact -->
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+          <ul>
+            <li>Email: info@ecoresort.com</li>
+            <li>Phone: +919500002584</li>
+            <li>Address: 123 Green Way, Forest Town, Kerala, India</li>
+          </ul>
+      </div>
+      <!-- Footer Quick home Links -->
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+          <ul>
+            <li><a href="../home/index.html">Home</a></li>
+            <li><a href="../stay/stay.html">stay</a></li>
+            <li><a href="../spa/spa.html">spa&pool</a></li>
+            <li><a href="../outing/outing.html">outing</a></li>
+            <li><a href="../booking/booking.html" class="active">Book here</a></li>
+          </ul>
+      </div>
+      <!-- Footer Media Links -->
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+          <a href="https://www.facebook.com/"><img src="../headerfooterimages/facebook-brands-solid.png" alt="facebook"></a>
+          <a href="https://www.instagram.com/"><img src="../headerfooterimages/square-instagram-brands-solid.png" alt="instagram"></a>
+          <a href="https://x.com/?lang=en"><img src="../headerfooterimages/square-x-twitter-brands-solid.png" alt="twitter"></a>
+      </div>
+      <!--Footer bottom-->
+      <div class="footer-bottom">
+        <p>&copy; 2024 Eco Resort. All Rights Reserved.</p>
+        <p>Designed with care for the Earth.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+

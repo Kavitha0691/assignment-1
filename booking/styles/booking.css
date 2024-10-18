@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, rgb(101, 109, 109), #4f7262, #698f75, rgb(160, 220, 194), rgb(134, 195, 184), rgb(132, 144, 144));
+    line-height: 1.6;
+    z-index: 0;
+  }
+  
+  .about {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .about h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+  }
+  
+  .about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+  
+  /* Booking Section */
+  .booking {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .booking h2 {
+    margin-bottom: 30px;
+  }
+  
+  .booking-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .booking-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .booking-form input, .booking-form select, .booking-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .booking-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .booking-form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .room-cards {
+      justify-content: center;
+    }
+  
+    .room-card {
+      width: 100%;
+      max-width: 400px;
+    }
+  
+    .booking-form {
+      max-width: 90%;
+    }
+
+    .booking-form input,
+    .booking-form select,
+    .booking-form button {
+        font-size: 0.9rem;
+    }
+    
+  }
+  
+  @media (max-width: 480px) {
+    .about {
+      width: 100%;
+    }
+    .about h1 {
+      font-size: 1.5rem; 
+    }
+
+    .about p {
+      font-size: 0.9rem; 
+      line-height: 1.4; 
+    }
+
+    .booking h2 {
+      font-size: 1.5rem; 
+    }
+
+    .booking-form label {
+      font-size: 0.9rem; 
+    }
+
+    .booking-form input,
+    .booking-form select,
+    .booking-form button {
+      padding: 6px; 
+    }
+
+  }
+  

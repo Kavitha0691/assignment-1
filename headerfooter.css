@@ -1,0 +1,252 @@
+.header a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
+    min-width: 120px;
+}
+
+header {
+    background-image: url(./headerfooterimages/backimage.jpg);
+    overflow: hidden;
+    background-position: top;
+    background-attachment: fixed;
+    flex-wrap: wrap ;
+    row-gap: 1em;
+    display: flex;
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    max-width: 100%;
+}
+
+.h1 {
+    font-weight: bolder;
+    flex: 1;
+    color: white;
+    font-size: 2rem;
+    min-width: 450px;
+    padding-top: 5px;
+}
+
+.h1 img {
+    width: 40px;
+    padding-right: 10px;
+    animation: leafrotate 5s infinite;
+    position: relative; 
+}
+
+nav img {
+    width: 20px;
+}
+
+nav {
+    display: flex;
+    flex: 4;
+    align-items: center;
+}
+
+nav a {
+    flex: 1;
+}
+
+nav a img {
+    margin-right: 5px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #B8001F;
+}
+
+nav a.active {
+    text-decoration: underline;
+    color: #06f326;
+}
+
+.header .button {
+    width: 8vw;
+    padding: .5em;
+    border-radius: 10px;
+    background-color: rgb(83, 171, 96);
+    color: white;
+    border: 1px solid rgb(70, 77, 74);
+}
+
+.button:hover {
+    background-color: aquamarine;
+    color: rgb(94, 28, 28);
+}
+
+.footer {
+    background-color: #9c9894;
+    color: #fff;
+    padding: 50px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.footer-address,
+.footer-contact,
+.footer-links,
+.footer-social {
+    flex-basis: 22%;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.footer-address p,
+.footer-contact ul {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.footer-contact ul,
+.footer-links ul {
+    list-style-type: none;
+}
+
+.footer-contact ul li,
+.footer-links ul li {
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+.footer-links .active {
+    color: #06f326;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.footer-links ul li a:hover {
+    text-decoration:underline;
+}
+
+.footer-social a img {
+    width: 30px;
+    height: auto;
+    margin-right: 30px;
+    transition: transform 0.3s ease;
+}
+
+.footer-address h3 img {
+    width: 30px;
+}
+
+.footer h3 {
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.footer .footer-contact h3 {
+    padding-left: 50px;
+}
+
+.footer-social a img:hover {
+    transform: scale(1.6);
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(16, 15, 15, 0.2);
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    text-align: center;
+    font-size: 15px;
+    margin: 5px;
+}
+
+/* Keyframes for the rotate leaf animation */
+@keyframes leafrotate {
+    0% {
+        transform: translate(0) rotate(0deg);
+    }
+    50% {
+        transform: translate(5px) rotate(200deg);
+    }
+    100% {
+        transform: translate(0) rotate(360deg);
+    }
+}
+
+/* Responsive Media Queries*/
+@media screen and (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem; 
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .header nav a {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-address,
+    .footer-contact,
+    .footer-links,
+    .footer-social {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 430px) {
+    .header .h1 {
+       font-size: 30px;
+       max-width: 100%;
+    }
+  
+    .header nav a, .header nav .button {
+       font-size: 15px;
+       max-width: 100%;
+       padding-right: 0%;
+    }
+
+    nav img {
+        width: 20px;
+    }
+
+    .header {
+        max-width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+    
+    .footer h3 {
+        font-size: 16px;
+    }
+
+    .footer-social a img {
+        margin-right: 5px;
+    }
+}
+

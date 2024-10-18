@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f8e7;
+    color: #333;
+    padding: 0;
+}
+
+/* Main Content Section */
+main {
+    padding: 40px 20px;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.section {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.outing-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.nature-outing {
+    background-color: white;
+    width: 300px;
+    margin: 15px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    border-bottom: 10px solid rgb(125, 206, 206);
+    transition: transform 0.3 ease;
+    transform: rotateY(0deg);
+}
+
+.nature-outing:hover {
+    transform: perspective(500px) rotateY(10deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.nature-outing img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.nature-outing h3 {
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+.nature-outing p {
+    font-size: 16px;
+    padding: 0 15px 20px 15px;
+}
+
+/* Activities Section */
+.activities {
+    text-align: center;
+}
+
+.activities h4 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.activities ul {
+    font-size: 18px;
+}
+
+.activities li {
+    margin: 10px 0;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .outing-container {
+        grid-template-columns: 1fr;
+    }
+
+    .nature-outing {
+        width: auto;
+        margin: 10px 0; 
+    }
+
+    .activities h4 {
+        font-size: 1.8rem;
+    }
+
+    .activities ul {
+        font-size: 16px; 
+    }
+
+    .activities li {
+        margin: 8px 0; 
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .section h2 {
+        font-size: 24px; 
+    }
+
+    .outing-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .nature-outing {
+        width: 100%; 
+        margin: 5px 0;
+    }
+
+    .nature-outing h3 {
+        font-size: 18px;
+    }
+
+    .nature-outing p {
+        font-size: 13px;
+        padding: 0 8px;
+    }
+
+    .activities ul {
+        font-size: 13px;
+    }
+
+    .activities li {
+        margin: 6px 0;
+    }
+
+
+    .activities h4 {
+        font-size: 1.6rem; 
+    }
+}

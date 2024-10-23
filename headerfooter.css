@@ -2,7 +2,7 @@
     text-decoration: none;
     color: white;
     font-size: 1.4em;
-    min-width: 120px;
+    text-wrap: nowrap;
 }
 
 header {
@@ -44,6 +44,7 @@ nav {
     display: flex;
     flex: 4;
     align-items: center;
+    gap: 0 1rem;
 }
 
 nav a {
@@ -65,7 +66,6 @@ nav a.active {
 }
 
 .header .button {
-    width: 8vw;
     padding: .5em;
     border-radius: 10px;
     background-color: rgb(83, 171, 96);
@@ -193,15 +193,15 @@ nav a.active {
         font-size: 2rem; 
     }
 
-    .header {
-        width: 100%;
-    }
-
     .header nav a {
         font-size: 1.5rem;
         margin-bottom: 10px;
         margin-top: 10px;
         width: 100%;
+    }
+
+    .header .button {
+        width: 80px;
     }
 
     .footer-container {
@@ -224,17 +224,21 @@ nav a.active {
     }
   
     .header nav a, .header nav .button {
-       font-size: 15px;
+       display: inline-block;
+       font-size: 12px;
        max-width: 100%;
-       padding-right: 0%;
     }
 
+    .header .button {
+        width: 65px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+    
     nav img {
-        width: 20px;
-    }
-
-    .header {
-        max-width: 100%;
+        width: 12px;
     }
 
     .footer-container {

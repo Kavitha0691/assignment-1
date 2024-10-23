@@ -179,9 +179,11 @@ nav a.active {
     0% {
         transform: translate(0) rotate(0deg);
     }
+
     50% {
         transform: translate(5px) rotate(200deg);
     }
+    
     100% {
         transform: translate(0) rotate(360deg);
     }
@@ -236,7 +238,7 @@ nav a.active {
     nav {
         flex-wrap: wrap;
     }
-    
+
     nav img {
         width: 12px;
     }
